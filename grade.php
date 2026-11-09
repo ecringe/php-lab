@@ -25,6 +25,22 @@
         $grade = "F";
     }
 
+    /*
+    // switch
+    switch ($grade) {
+        case "A":
+        case "B":
+            $message = "Маш сайн";
+            break;
+        case "C":
+        case "D":
+            $message = "Дунд";
+            break;
+        default:
+            $message = "Дахин суралцана";
+    }
+    */
+
     $message = match(true){
         $grade == "A" || $grade == "B" => "Маш сайн",
         $grade == "C" || $grade == "D" => "Дунд",
